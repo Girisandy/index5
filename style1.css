@@ -1,0 +1,375 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Arial,sans-serif;
+
+}
+.i7
+{
+	display:flex ;
+	flex-direction:row;
+	width: 100%;
+	overflow-x: hidden;
+}
+.sidebar
+{
+	min-height: 650px;
+	display: flex;
+	flex-direction:column;
+	width: 20%;
+	background-color: #003366;
+	height: auto;
+	color: white;
+	z-index: -9999;
+}
+.sidebar .detail
+{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-left: 2rem;
+	
+}
+.sidebar .image
+{
+	margin: 3rem 2rem;
+}
+
+.i7 .sidebar .detail button 
+{
+	width: 45%;
+	text-decoration: underline;
+	padding: 2px 0px;
+	
+}
+.back-home-button
+{
+	cursor: pointer;
+}
+.header 
+{
+	display: flex;
+	flex-direction: row;
+	gap: 5px;margin-top: 2rem;
+	margin-left: 1.5rem;
+}
+.headers  
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #f5f5f5;
+	width: 100%;
+}
+.headers .header button 
+{
+	background-color: #673ab7;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #673ab7;
+	width: 127px;
+	padding: 10px 2px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.tablebox 
+{
+	width: 85%;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.tablebox .table
+{
+	width: 1080px;
+	margin-left: 1.5rem;
+}
+.tablebox .table table
+{
+    margin: 0px auto;
+	width: 100%;
+	border: 0px solid;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+}
+thead tr th
+{
+	background-color: #f2f2f2;
+}
+
+th, td {
+  border-bottom: 1px solid #f2f2f2; 
+  padding: 8px; 
+  text-align: left;
+  background-color: #f5f5f5;
+
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold; 
+}
+
+
+.forms {
+  width:1080px; /* Set the container width to 80% */
+  margin: 3rem auto; /* Center the form horizontally with auto margins */
+  padding: 20px; /* Add padding for internal spacing */
+  border: 1px solid #ddd; /* Light border around the form */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+  margin-left: 1.5rem;
+}
+
+.forms h3 {
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Text color for the heading */
+  font-size: 1.5rem; /* Font size for the heading */
+}
+
+.form {
+  display: flex; 
+  flex-direction: column;
+}
+
+.form label {
+  flex: 1; /* Label takes up one portion */
+  color: #555; /* Label text color */
+  font-weight: bold; /* Make label text bold */
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  flex: 2; /* Input takes up two portions */
+  padding: 8px; /* Internal padding for the input field */
+  border: 1px solid #ccc; /* Border for input */
+  border-radius: 3px; /* Rounded corners for input */
+  outline: none; /* Remove default outline */
+}
+
+.form button {
+  width: 100%; /* Full width button */
+  padding: 10px;
+  background-color:#673ab7 ; /* Green button color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+}
+
+.form button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+
+#dateofbirth {
+    width: 100%;
+    padding: 8px 35px 8px 8px; /* Space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#calendar-icon {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#datepicker-container {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .forms {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .form {
+    flex-direction: column; /* Stack label and input */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  .form label {
+    margin-bottom: 5px; /* Space below label */
+  }
+
+  .form input {
+    width: 100%; /* Full width input for smaller screens */
+  }
+}
+
+@media(max-width:1200px)
+{
+	.sidebar
+	{
+		width: 25%;
+	}
+	.header 
+	{
+		width: 100%;
+	}
+	.tablebox .table
+	{
+		margin-top: 4rem;
+		width: 810px;
+	}
+	.forms
+	{
+		width: 810px;
+
+	}
+}
+@media(max-width:1071px)
+{
+	.tablebox{
+		margin: 20px auto;
+	}
+	.tablebox .table
+	{
+		margin-top: 4rem;
+		width: 90%;
+	}
+	
+	.forms
+	{
+		width: 90%;
+
+	}
+}
+@media(max-width:1007px)
+{
+	.sidebar{
+		width: 35%;
+	}
+	.sidebar .detail button{
+		width: 70%;
+	}
+	.header
+	{
+		width: 95%;
+	}
+}
+@media(max-width:921px)
+{
+	.tablebox{
+		margin: 20px auto;
+	}
+	.tablebox .table
+	{
+		margin-top: 3rem;
+		width: 95%;
+	}
+	.tablebox .forms 
+	{
+		margin: auto;
+		margin-top: 2rem;
+	}
+	
+	.forms
+	{
+		width: 90%;
+
+	}
+}
+@media(max-width:972px)
+{
+	.sidebar
+	{
+		width: 35%;
+	}
+	.header 
+	{
+		width: 95%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media(max-width:931px)
+{
+	.i7
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.sidebar 
+	{
+		width: 100%;
+		min-height:320px ;
+		
+	}
+	.header 
+	{
+		margin: 0px auto;
+		margin-top: 2rem;
+	}
+	.sidebar .image
+	{
+		margin: auto;
+	}
+	.sidebar .detail
+	{
+		margin: auto;
+		margin-top: -2rem;
+	}
+	.sidebar .detail button
+	{
+		width: 90%;
+	}
+	.header button
+	{
+		margin: auto;
+	}
+
+}
+
+@media(max-width:683px)
+{
+	.tablebox .table
+	{
+		width: 80%px;
+		margin: 0px auto;
+		table-layout: fixed;
+		overflow-x: auto;
+
+	}
+	.table table th,.table table td  
+	{
+		min-width: 150px;
+		min-height: 300px;
+	}
+
+}
+@media(max-width:1006px)
+{
+	.i7 .sidebar .detail button 
+{
+	width: 70%;
+}
+}
+@media(max-width:930px)
+{
+	.i7 .sidebar .detail  
+{
+	text-align: center;
+}
+.i7 .sidebar .detail button 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1.3rem;
+}
+}
